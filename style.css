@@ -1,0 +1,208 @@
+@font-face
+{
+	font-family: 'CaviarDreams';
+    src: url('font/CaviarDreams.ttf') format('truetype'),
+}
+
+body {
+	background: #edfef1 url(image/bicycle-2766238.svg) repeat-y fixed center;
+	font-family: 'CaviarDreams', Arial, serif;
+	width: 100%;
+	margin: 0px;
+}
+
+#contenu, html {
+	width: 100%;
+}
+
+#map {
+	width: 900px;
+	height: 750px;
+}
+
+#reservation {
+	display: none;
+	width: 80%;
+	height: 100px;
+	margin: auto;
+	background-color: white;
+	border: solid 1px black;
+	border-radius: 15px;
+}
+
+.diapo {
+	width: 100%;
+	max-width: 900px;
+	max-height: 600px;
+	position: absolute;
+
+	-webkit-animation: fadein 3s;
+    -moz-animation: fadein 3s;
+    -ms-animation: fadein 3s;
+    -o-animation: fadein 3s;
+    animation: fadein 3s;
+
+	/*-webkit-animation: fadeout 2s 3s;
+    -moz-animation: fadeout 2s 3s;
+    -ms-animation: fadeout 2s 3s;
+    -o-animation: fadeout 2s 3s;
+    animation: fadeout 2s 3s;*/
+}
+
+.photoDiapo {
+	width: 100%;
+}
+
+.texteDiapo {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.75);
+	top: 65%;
+	padding: 40px;
+	margin: auto;
+	font-size: 1.3em;
+
+}
+
+#slider {
+	margin-bottom: 25px;
+	width: 900px;
+	height: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#infos {
+	display: none;
+	background-color: white;
+	height: 200px;
+	margin-top: 15px;
+	padding: 10px;
+	border: double 2px black;
+	border-radius: 20px;
+}
+
+#carteEtInfos {
+	position: unset;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.lienDetails {
+	width: 45px;
+	height: 45px;
+	background-color: white;
+	border: solid 1px black;
+	border-radius: 23px;
+	text-align: center;
+	z-index: 1;
+}
+
+#etatReservation {
+	width: 100%;
+	display: none;
+	height: 50px;
+	background-color: black;
+	color: white;
+	font-size: 1.1em;
+}
+
+#canvas {
+	display: block;
+	background-color: white;
+}
+
+@media all and (max-width: 1200px) 
+{
+	#carteEtInfos 
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media all and (max-width: 860px)
+{
+	#map {
+		width: 600px!important;
+		height: 450px!important;
+	}
+
+	#slider {
+		height: 550px;
+	}
+}
+
+@media all and (max-width: 630px)
+{
+	#map {
+		width: 400px!important;
+		height: 300px!important;
+	}
+
+	#slider {
+		height: 400px;
+	}
+}
+
+@media all and (max-width: 425px)
+{
+	#map {
+		width: 280px!important;
+		height: 280px!important;
+	}
+
+	#slider {
+		height: 250px;
+	}
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-ms-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-o-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}

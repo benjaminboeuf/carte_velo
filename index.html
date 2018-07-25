@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>Vélo'V, réservez un vélo en ligne simplement</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<meta name="description" content="Vous cherchez à vous déplacer facilement en ville et écologiquement ? Vélo'V vous propose un service de réservation de vélos en ligne, simple d'utilisation et respectueux de notre environnement">
+	<meta property="og:title" content="Page du site de réservation de vélos Vélo'V" />
+	<meta property="og:type" content="website" />
+	<!-- <meta property="og:url" content="http://atc-b.ovh/" />
+	<meta property="og:image" content="http://atc-b.ovh/" /> -->
+</head>
+
+<body>
+
+	<div id="contenu">
+
+		<!-- <header></header>??? -->
+
+		<section id="slider">
+			<div class="diapo" style="z-index: 50;">
+				<img class="photoDiapo" alt="photo d'une fontaine recouverte de fleurs lors d'un festival à Lyon" src="image/lyon-803441.jpg">
+				<p class="texteDiapo">Nam sollicitudin est tellus. Sed sed lectus eros. Donec dictum diam nibh, sed cursus lectus.</p>
+			</div>
+
+			<div class="diapo">
+				<img class="photoDiapo" alt="photo d'un attroupement de musiciens sur les quais de Lyon" src="image/lyon-3220049.jpg">
+				<p class="texteDiapo">Nullam fringilla, leo id ullamcorper interdum, nisi tortor ultrices ante, quis euismod.</p>
+			</div>
+
+			<div class="diapo">
+				<img class="photoDiapo" alt="photo d'une sculture représentant un globe terrestre soulevé par des hommes nus dans un parc de Lyon" src="image/image-1004415.jpg">
+				<p class="texteDiapo">Integer nec orci eget orci  id justo. In pharetra mauris eu nulla convallis consequat.</p>
+			</div>
+
+			<div class="diapo">
+				<img class="photoDiapo" alt="photo des quais de Lyon" src="image/lyon-942770.jpg">
+				<p class="texteDiapo">Vivamus et quam eget erat finibus tincidunt. Nam et eros dui. Fusce eros, quis accumsan urna ornare in.</p>
+			</div>
+			
+			<div class="diapo">
+				<img class="photoDiapo" alt="photo de nuit du musée des confluances de Lyon" src="image/musee-des-confluances-1004423.jpg">
+				<p class="texteDiapo">Aliquam maximus, nunc massa ornare nisi, vel pellentesque ligula neque posuere ante.</p>
+			</div>
+		</section>
+
+		<section id="carteEtInfos">
+			
+			<div id="map">
+			</div>
+			
+			<div id="infos">
+				<h2>Détails de la station <span class="station">République</span></h2>
+				<p>Adresse : <span id="adresseStation">1, rue de la République 69000 Lyon</span></p>
+				<p><span id="nbrPlaces">25</span> places</br><span id="nbrVeloDispo">6</span> vélos disponibles</p>
+				<button id="boutonReservation">Réservez</button>
+			</div>
+		</section>
+
+		<section id="reservation">
+			<p>Signature :</p>
+			<div id="signature">
+				<canvas id="canvas" width="300" height="100"></canvas>
+			</div>
+			<button id="validSign">Ok!</button>
+		</section>
+
+		<footer>
+			<div id="etatReservation">
+				<p>1 vélo réservé à la station <span class="station">Victor Hugo</span> pour <span id="tempsReservation">20 min</span></p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/canvas.js"></script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxRGS7-hAG74sT8bGixaeYHrkKvQeC7mU&callback=initMap"
+    async defer></script>
+
+</body>
